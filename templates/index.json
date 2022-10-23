@@ -298,9 +298,10 @@
         "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-10-23_at_16.26.48.png",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
