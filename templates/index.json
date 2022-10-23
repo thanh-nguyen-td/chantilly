@@ -360,6 +360,97 @@
         "text_head": "CHANTILLY SWIMWEAR",
         "text_content": "“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”"
       }
+    },
+    "267a99cd-6a41-44d1-b05d-09ed7f3feafa": {
+      "type": "custom-list-img",
+      "blocks": {
+        "bc98e4e9-aece-4b44-a5af-d6e4f2a64fd8": {
+          "type": "list_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/166820610_1084592048705359_6351268226700936386_n.jpg",
+            "link_url": "",
+            "text_title": "Follow us",
+            "text_content": ""
+          }
+        },
+        "577643d0-b05d-49db-8147-8f5683bfef6f": {
+          "type": "list_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/insta.jpg",
+            "link_url": "",
+            "text_title": "Follow us",
+            "text_content": ""
+          }
+        },
+        "0023a8e3-1385-49fb-a010-bcb57348d352": {
+          "type": "list_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/162040110_126591512690235_2650967926924190660_n.jpg",
+            "link_url": "",
+            "text_title": "Follow us",
+            "text_content": ""
+          }
+        },
+        "b5b5ff01-26c4-4902-8a70-d8120f40c1cc": {
+          "type": "list_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/159880155_292703242198270_4221346100191721237_n.jpg",
+            "link_url": "",
+            "text_title": "Follow us",
+            "text_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "bc98e4e9-aece-4b44-a5af-d6e4f2a64fd8",
+        "577643d0-b05d-49db-8147-8f5683bfef6f",
+        "0023a8e3-1385-49fb-a010-bcb57348d352",
+        "b5b5ff01-26c4-4902-8a70-d8120f40c1cc"
+      ],
+      "settings": {
+      }
+    },
+    "1d43637a-c9e7-4540-b008-11542f9d2f40": {
+      "type": "cross-page-promos",
+      "blocks": {
+        "14556d86-f714-4e4f-ba8d-71b00ff76377": {
+          "type": "list_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-10-23_at_22.11.01.png",
+            "link_url": "",
+            "text_title": "Follow us"
+          }
+        },
+        "ee52d585-9934-414b-9259-464999ea602c": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Follow us"
+          }
+        },
+        "788509d0-b65f-431a-ad14-307f540ba01a": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Follow us"
+          }
+        },
+        "28734f28-26e3-40b7-8a58-455369443682": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Follow us"
+          }
+        }
+      },
+      "block_order": [
+        "14556d86-f714-4e4f-ba8d-71b00ff76377",
+        "ee52d585-9934-414b-9259-464999ea602c",
+        "788509d0-b65f-431a-ad14-307f540ba01a",
+        "28734f28-26e3-40b7-8a58-455369443682"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -372,6 +463,8 @@
     "0c3c257f-9406-4471-baff-ef313f78d466",
     "fa0e3ba6-60bc-4fd2-a594-fa018d57218d",
     "6d66e3b4-a460-4ef7-b0a6-fecdde76bef3",
-    "7160b95b-4550-4e45-ab83-26f4054a3290"
+    "7160b95b-4550-4e45-ab83-26f4054a3290",
+    "267a99cd-6a41-44d1-b05d-09ed7f3feafa",
+    "1d43637a-c9e7-4540-b008-11542f9d2f40"
   ]
 }
