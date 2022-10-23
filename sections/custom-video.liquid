@@ -1,15 +1,16 @@
-<div class="custom-video-container">
-   <div>
-        <video  width="100%" heoght="auto" autoplay>
-            <source src="{{section.settings.video_link}}"/>
+<div class="custom-video-container" style="position: relative;">
+   <div style="">
+        <video  width="100%" height="auto" autoplay loop muted>
+            <source src="{{section.settings.video_link}}" type="video/mp4"/>
         </video>
    </div>
-   <div>
-    {% for items in section.blocks.text_list %}
+   <div style="position:absolute; z-index:100;">
+    thanh
+    {% for items in section.blocks %}
         {{items.settings.title}}
     {% endfor %}
    </div>
-  
+  <div style="background: red;">thanh</div>
 </div>
 {% schema %}
 {
@@ -29,7 +30,7 @@
         "name":"text_list",
         "settings":[
             {
-                "type":"richtext",
+                "type": "liquid",
                 "id":"title",
                 "default":"<p>day la demo</p>",
                 "label":"text head"
