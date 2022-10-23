@@ -1,0 +1,37 @@
+<div style="background: red;">Cross page promos</div>
+{% schema %}
+{
+    "name":"Cross page promos",
+    "tag":"section",
+   "blocks":[
+    {
+    "type":"list_img",
+    "name":"img",
+    "limit":4,
+    "settings":[
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+        },
+        {
+            "type":"url",
+            "id":"link_url",
+            "label":"Selecter link"
+        },
+        {
+            "type":"text",
+            "id":"text_title",
+            "label":"Text title",
+            "default":"Follow us"
+        }
+    ]
+   }
+   ],
+    "presets":[
+        {
+            "name":"Cross page promos" 
+        }
+    ]
+}
+{% endschema %}

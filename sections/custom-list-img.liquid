@@ -1,0 +1,43 @@
+<div style="background: red;">List img</div>
+{% schema %}
+{
+    "name":"Image list",
+    "tag":"section",
+   "blocks":[
+    {
+    "type":"list_img",
+    "name":"img",
+    "limit":4,
+    "settings":[
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+        },
+        {
+            "type":"url",
+            "id":"link_url",
+            "label":"Selecter link"
+        },
+        {
+            "type":"text",
+            "id":"text_title",
+            "label":"Text title",
+            "default":"Follow us"
+        },
+        {
+            "type":"text",
+            "id":"text_content",
+            "label":"@bestswimwear"
+        }
+
+    ]
+   }
+   ],
+    "presets":[
+        {
+            "name":"Image list" 
+        }
+    ]
+}
+{% endschema %}

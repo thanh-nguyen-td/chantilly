@@ -24,9 +24,6 @@
     border-radius: 85px;
    
 }
-.custom-text-list-container {
-    background: var(--color-pink-bg);
-}
 .uppercase{
     text-transform: uppercase !important;
 }
