@@ -1,0 +1,39 @@
+<div>
+    demo
+    {%- for item in section.blocks -%}
+        
+    {%- endfor -%}
+</div>
+{% schema %}
+{
+    "name":"Custom collection",
+    "tag":"section",
+    "settings":[
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Future Designer Collabs"
+        }
+    ],
+    "blocks":[
+    {
+        "type":"collection_list",
+        "name":"collection_list",
+        "limit":4,
+        "settings":[
+            {
+                "type": "collection",
+                "id": "collection",
+                "label": "Collection"
+            }
+        ]
+    }
+],
+    "presets":[
+        {
+            "name":"Custom collection list" 
+        }
+    ]
+}
+{% endschema %}
