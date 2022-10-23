@@ -1,0 +1,38 @@
+<div class="custom-video-container">
+    <div>demo Video</div>
+    <video>
+        <source src="{{section.settings.video_link}}" width="100%" heoght="auto"/>
+    </video>
+</div>
+{% schema %}
+{
+    "name":"Custom video",
+    "tag":"section",
+    "settings":[
+        {
+            "type": "video",
+            "id": "video_link",
+            "label": "Video"
+        }
+    ],
+    "blocks":[
+    {
+        "type":"text_list",
+        "name":"text_list",
+        "settings":[
+            {
+                "type":"richtext",
+                "id":"title",
+                "default":"<p>day la demo</p>",
+                "label":"text head"
+            }
+        ]
+    }
+],
+    "presets":[
+        {
+            "name":"Custom video" 
+        }
+    ]
+}
+{% endschema %}
