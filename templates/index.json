@@ -201,6 +201,12 @@
     "978582cc-2960-4473-a149-6ac8608eb59b": {
       "type": "custom-video",
       "blocks": {
+        "9efc3e85-b2d2-4a5b-bdeb-4b34ae67da3e": {
+          "type": "text_list",
+          "settings": {
+            "title": "<p>day la demo<\/p>"
+          }
+        },
         "70942d1d-722c-4e69-a491-59879677ea16": {
           "type": "text_list",
           "settings": {
@@ -215,6 +221,7 @@
         }
       },
       "block_order": [
+        "9efc3e85-b2d2-4a5b-bdeb-4b34ae67da3e",
         "70942d1d-722c-4e69-a491-59879677ea16",
         "515040ac-c0f4-46aa-9d21-c2046c5028a1"
       ],
