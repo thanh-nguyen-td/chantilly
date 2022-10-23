@@ -200,7 +200,26 @@
     },
     "978582cc-2960-4473-a149-6ac8608eb59b": {
       "type": "custom-video",
+      "blocks": {
+        "70942d1d-722c-4e69-a491-59879677ea16": {
+          "type": "text_list",
+          "settings": {
+            "title": "<p>&lt;h1&gt;Escape the Everyday&lt;\/h1&gt;<\/p>"
+          }
+        },
+        "515040ac-c0f4-46aa-9d21-c2046c5028a1": {
+          "type": "text_list",
+          "settings": {
+            "title": "<p>day la demo<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "70942d1d-722c-4e69-a491-59879677ea16",
+        "515040ac-c0f4-46aa-9d21-c2046c5028a1"
+      ],
       "settings": {
+        "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0183\/5415\/files\/pexels-taryn-elliott-6051511.mp4?v=1608134933"
       }
     }
   },
