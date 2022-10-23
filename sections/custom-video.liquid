@@ -1,8 +1,15 @@
 <div class="custom-video-container">
-    <div>demo Video</div>
-    <video>
-        <source src="{{section.settings.video_link}}" width="100%" heoght="auto"/>
-    </video>
+   <div>
+        <video  width="100%" heoght="auto" autoplay>
+            <source src="{{section.settings.video_link}}"/>
+        </video>
+   </div>
+   <div>
+    {% for items in section.blocks.text_list %}
+        {{items.settings.title}}
+    {% endfor %}
+   </div>
+  
 </div>
 {% schema %}
 {
@@ -10,9 +17,10 @@
     "tag":"section",
     "settings":[
         {
-            "type": "video",
+            "type": "text",
             "id": "video_link",
-            "label": "Video"
+            "label": "Video link",
+            "default": "https://cdn.shopify.com/s/files/1/0183/5415/files/pexels-taryn-elliott-6051511.mp4?v=1608134933"
         }
     ],
     "blocks":[
