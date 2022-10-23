@@ -266,6 +266,49 @@
       "settings": {
         "title": "Future Designer Collabs"
       }
+    },
+    "fa0e3ba6-60bc-4fd2-a594-fa018d57218d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fit For You",
+            "heading_size": "h1"
+          }
+        },
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A day at the pool or lounging by the sea calls for an unexpected and fresh swimsuit update.<\/p><p>When it comes to putting together the perfect beach outfit, our collection of swimwear has you covered. Whether you're looking for a classic one-piece, a dazzling two-piece bikini or a luxe cover-up that will go from the sand to the city, you'll be ready to soak up the sunshine in no time.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP COLLECTION",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-0",
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-1",
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -275,6 +318,7 @@
     "image_banner",
     "featured_collection",
     "978582cc-2960-4473-a149-6ac8608eb59b",
-    "0c3c257f-9406-4471-baff-ef313f78d466"
+    "0c3c257f-9406-4471-baff-ef313f78d466",
+    "fa0e3ba6-60bc-4fd2-a594-fa018d57218d"
   ]
 }
