@@ -228,6 +228,30 @@
       "settings": {
         "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0183\/5415\/files\/pexels-taryn-elliott-6051511.mp4?v=1608134933"
       }
+    },
+    "0c3c257f-9406-4471-baff-ef313f78d466": {
+      "type": "custom-collection",
+      "blocks": {
+        "7bfabec0-32e7-4875-8ace-fa2cac51a74a": {
+          "type": "collection_list",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "9dfad7de-96e3-4a12-8364-f18451df8312": {
+          "type": "collection_list",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "7bfabec0-32e7-4875-8ace-fa2cac51a74a",
+        "9dfad7de-96e3-4a12-8364-f18451df8312"
+      ],
+      "settings": {
+        "title": "Future Designer Collabs"
+      }
     }
   },
   "order": [
@@ -236,6 +260,7 @@
     "28eaf566-e922-4a86-84c5-f9022fee0b79",
     "image_banner",
     "featured_collection",
-    "978582cc-2960-4473-a149-6ac8608eb59b"
+    "978582cc-2960-4473-a149-6ac8608eb59b",
+    "0c3c257f-9406-4471-baff-ef313f78d466"
   ]
 }
