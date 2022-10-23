@@ -4,14 +4,28 @@
             <source src="{{section.settings.video_link}}" type="video/mp4"/>
         </video>
    </div>
-   <div style="position:absolute; z-index:100;">
-    thanh
+   <div class="content">
     {% for items in section.blocks %}
         {{items.settings.title}}
     {% endfor %}
    </div>
-  <div style="background: red;">thanh</div>
 </div>
+{% style %}
+.custom-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-video-container .content {
+    position:absolute;
+    z-index:100;
+    color:#fff;
+}
+.custom-video-container .content h1 {
+    color:#fff;
+    font-family:'ITC Galliard'
+}
+{% endstyle %}
 {% schema %}
 {
     "name":"Custom video",

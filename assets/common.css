@@ -13,12 +13,6 @@
     text-transform: uppercase !important;
 }
 
-.custom-video-container{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
 /* text weight */
 .text_400{
     font-weight: 400;
