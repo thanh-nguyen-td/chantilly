@@ -353,6 +353,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "7160b95b-4550-4e45-ab83-26f4054a3290": {
+      "type": "text-list",
+      "settings": {
+        "text_head": "CHANTILLY SWIMWEAR",
+        "text_content": "“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”"
+      }
     }
   },
   "order": [
@@ -364,6 +371,7 @@
     "978582cc-2960-4473-a149-6ac8608eb59b",
     "0c3c257f-9406-4471-baff-ef313f78d466",
     "fa0e3ba6-60bc-4fd2-a594-fa018d57218d",
-    "6d66e3b4-a460-4ef7-b0a6-fecdde76bef3"
+    "6d66e3b4-a460-4ef7-b0a6-fecdde76bef3",
+    "7160b95b-4550-4e45-ab83-26f4054a3290"
   ]
 }
