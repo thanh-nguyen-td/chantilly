@@ -404,6 +404,14 @@
       ],
       "settings": {
       }
+    },
+    "8cf6907a-5722-4a3a-990b-ba0eb046e1ad": {
+      "type": "custom-slider",
+      "settings": {
+        "img_slider": "",
+        "text_title": "New Arrival",
+        "show_button_view_all": true
+      }
     }
   },
   "order": [
@@ -417,6 +425,7 @@
     "6d66e3b4-a460-4ef7-b0a6-fecdde76bef3",
     "7160b95b-4550-4e45-ab83-26f4054a3290",
     "267a99cd-6a41-44d1-b05d-09ed7f3feafa",
-    "1d43637a-c9e7-4540-b008-11542f9d2f40"
+    "1d43637a-c9e7-4540-b008-11542f9d2f40",
+    "8cf6907a-5722-4a3a-990b-ba0eb046e1ad"
   ]
 }
