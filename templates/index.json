@@ -408,7 +408,7 @@
     "8cf6907a-5722-4a3a-990b-ba0eb046e1ad": {
       "type": "custom-slider",
       "settings": {
-        "img_slider": "",
+        "img_slider": "frontpage",
         "text_title": "New Arrival",
         "show_button_view_all": true
       }
