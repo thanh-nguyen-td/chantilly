@@ -2,10 +2,47 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "background-1"
+      }
+    },
+    "b2a14417-44b9-4464-af27-a6a6290b8c36": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16683678040377__b2a14417-44b9-4464-af27-a6a6290b8c36-1666621373247cbfbd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Swimwear",
+            "heading_size": "h1"
+          }
+        },
+        "template--16683678040377__b2a14417-44b9-4464-af27-a6a6290b8c36-1666621373247cbfbd-1": {
+          "type": "text",
+          "settings": {
+            "text": "Our latest women's swimwear collection brings together this season's biggest trends on the beach, including vibrant tropical prints and bold neon shades, to create a beautiful range of bikinis, tankinis and swimsuit. Paired with chic cover-ups, sandals and a selection of beach dresses, you'll have the hottest look at the beach.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16683678040377__b2a14417-44b9-4464-af27-a6a6290b8c36-1666621373247cbfbd-0",
+        "template--16683678040377__b2a14417-44b9-4464-af27-a6a6290b8c36-1666621373247cbfbd-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/swimwear-coll.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "product-grid": {
@@ -25,10 +62,53 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "52301d29-7a2d-4f54-bc23-3809084f90d4": {
+      "type": "cross-page-promos",
+      "blocks": {
+        "0bc0eeaf-ea93-4b80-be05-f3326b2b0c24": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Free shipping"
+          }
+        },
+        "e98b251f-8e0e-49ba-b589-3dac6dc4d1ea": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "New styles"
+          }
+        },
+        "6a62865e-fa8e-4e7b-99e6-c69536a7db6d": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Gift cards"
+          }
+        },
+        "d08838a4-1197-448e-8af7-e6ec4f8ed75c": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "5.0 Trustpilot rating"
+          }
+        }
+      },
+      "block_order": [
+        "0bc0eeaf-ea93-4b80-be05-f3326b2b0c24",
+        "e98b251f-8e0e-49ba-b589-3dac6dc4d1ea",
+        "6a62865e-fa8e-4e7b-99e6-c69536a7db6d",
+        "d08838a4-1197-448e-8af7-e6ec4f8ed75c"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "b2a14417-44b9-4464-af27-a6a6290b8c36",
+    "product-grid",
+    "52301d29-7a2d-4f54-bc23-3809084f90d4"
   ]
 }
