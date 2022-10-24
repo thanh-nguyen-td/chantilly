@@ -97,7 +97,7 @@
             </div>
           </div>
         {%- endif -%}
-        <div class="card__content">
+        {%- comment -%} <div class="card__content">
           <div class="card__information">
             <h3
               class="card__heading"
@@ -132,11 +132,12 @@
               </span>
             {%- endif -%}
           </div>
-        </div>
+        </div> {%- endcomment -%}
       </div>
       <div class="card__content">
         <div class="card__information">
           <h3
+            style="text-align: center;"
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
@@ -145,7 +146,8 @@
             <a
               href="{{ card_product.url }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
-              class="full-unstyled-link"
+              class="full-unstyled-link text_brown"
+              style="font-family: 'Open Sans', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
               {{ card_product.title | escape }}
@@ -196,6 +198,34 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '' %}
+            {% assign keys = "Color,color,Colour,colour" | split: ',' %}
+            {% for key in keys %}
+            {% if card_product.options contains key %}
+            <div class="product_tile_color_holder custom_center">
+              {% for color_option in card_product.options_by_name[key].values %}
+              {% for variant in card_product.variants  %}
+              {% if variant.options contains color_option %}
+              {% if variant.image %}
+              {% assign background_style = color_option %}
+              {% endif %}
+              {% if variant.metafields.color.values %}
+              {% assign background_style = variant.metafields.color.values %}
+              {% endif %}
+              {% if variant.metafields.image.values %}
+              {% assign background_style = "url(" | append: variant.metafields.image.swatch | append: ")" %}
+              {% endif %}
+              {% endif %}
+              {% endfor %}
+			  <!--- Coded by websensepro.com --->
+              <input
+                     type="radio"
+                     name="{{ card_product.id }}_card_color"
+                     id="{{ card_product.id }}_color_{{ forloop.index }}"
+                     style="background: {{ background_style }}; background-size: cover;">
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% endfor %}
           </div>
         </div>
         {%- if show_quick_add -%}
@@ -363,3 +393,14 @@
     </div>
   </div>
 {%- endif -%}
+{% style %}
+  input[type=radio][name$=_card_color]{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+		border: 1px solid black;
+                appearance: none;
+                background-size: 9px 9px;
+                background-image: repeating-linear-gradient(45deg, #000 0, #000 1px, #ebebeb 0, #ebebeb 50%);
+              }
+{% endstyle %}

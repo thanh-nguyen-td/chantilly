@@ -19,46 +19,30 @@
   "cellAlign": "left",
   "groupCells": true,
   "autoPlay": true,
-  "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
+  "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25},
+  "wrapAround": true,
+  "freeScroll": true,
+  "lazyLoad": 1
 }
 {%- endcapture -%}
 
-<div class="featured-collection-slider page-width">
+<div class="featured-collection-slider ">
     {% if section.settings.title != blank %}
-    <div class="section-header text-center">
+    <div class="section-header text-center" style="text-align: center;">
       <!-- <h2>{{ section.settings.title | escape }}</h2> -->
       <h2>Carousel</h2>
     </div>
     {% endif %}
     {%- assign collection = collections[section.settings.feature-collection] -%}
     {%- assign product_limit = section.settings.product_count -%}
-        <div class="products-carousel js-flickity" data-flickity='{{ flickity_options }}'>
-     
+        <div class="products-carousel js-flickity" data-flickity='{{ flickity_options }}' style="box-shadow: none;">
          <!-- content card-->
-            <div class="carousel-cell">
-                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
-            </div>  
-            <div class="carousel-cell">
-                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
-            </div>  
-            <div class="carousel-cell">
-                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
-            </div>  
-            <div class="carousel-cell">
-                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
-            </div>  
-            <div class="carousel-cell">
-                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
-            </div>  
-       <!-- end content -->
-       {%comment%}
-          <!-- hoặc sử dụng vòng lặp for từ collection truyền vào trong content -->
-            {% for product in collection.products limit: product_limit %}
+           {% for product in collection.products %}
               <div class="carousel-cell">
-                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
+               <img src="{{ product.featured_image | img_url: 'large'}}" style="height:300px;width:100%" />
               </div> 
             {% endfor %}
-        {%endcomment%}
+       <!-- end content -->
         </div>
 </div>
 
@@ -66,8 +50,8 @@
         .featured-collection-slider{
           padding-left: 55px;
           padding-right: 55px;
-          max-width: 1200px;
           margin: 0 auto;
+          background: var(--color-pink-bg);
         }
         .featured-collection-slider .carousel-cell{
           width:25%;
@@ -76,6 +60,15 @@
         }
         .flickity-button:disabled{
           pointer-events: all!important;
+        }
+        .flickity-prev-next-button.next{
+          top: -35px !important;
+          right:40% !important;
+        }
+
+       .flickity-prev-next-button.previous{
+          top: -35px !important;
+          left:40% !important;
         }
         @media screen and (max-width: 920px){
           .featured-collection-slider{
