@@ -1,5 +1,12 @@
 <div class="custon-slider-container">
-day la demo sutom slider
+    kaka
+    <div>
+        {% for collection in section.settings.collection %}
+            <div >{{section.settings.collection.title}}</div>
+        {% endfor %}
+        <div >{{section.settings.collection.title}}</div>
+    </div>
+    kiki
 </div>
 {% schema %}
 {
@@ -8,8 +15,8 @@ day la demo sutom slider
     "settings":[
         {
             "type":"collection",
-            "id":"img_slider",
-            "label":"image slider"
+            "id":"collection",
+            "label":"collection"
         },
         {
             "type":"text",
