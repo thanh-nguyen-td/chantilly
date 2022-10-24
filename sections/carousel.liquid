@@ -1,0 +1,126 @@
+{% comment %}
+
+  Renders a Carousel
+  Request:
+    - add link in theme:
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    - for loop
+  Accepts:null
+  Usage:
+  {% section 'carousel' %}
+
+{% endcomment %}
+{%- capture flickity_options -%}
+{
+  "prevNextButtons": true,
+  "pageDots": false,
+  "contain": true,
+  "cellAlign": "left",
+  "groupCells": true,
+  "autoPlay": true,
+  "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
+}
+{%- endcapture -%}
+
+<div class="featured-collection-slider page-width">
+    {% if section.settings.title != blank %}
+    <div class="section-header text-center">
+      <!-- <h2>{{ section.settings.title | escape }}</h2> -->
+      <h2>Carousel</h2>
+    </div>
+    {% endif %}
+    {%- assign collection = collections[section.settings.feature-collection] -%}
+    {%- assign product_limit = section.settings.product_count -%}
+        <div class="products-carousel js-flickity" data-flickity='{{ flickity_options }}'>
+     
+         <!-- content card-->
+            <div class="carousel-cell">
+                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
+            </div>  
+            <div class="carousel-cell">
+                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
+            </div>  
+            <div class="carousel-cell">
+                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
+            </div>  
+            <div class="carousel-cell">
+                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
+            </div>  
+            <div class="carousel-cell">
+                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
+            </div>  
+       <!-- end content -->
+       {%comment%}
+          <!-- hoặc sử dụng vòng lặp for từ collection truyền vào trong content -->
+            {% for product in collection.products limit: product_limit %}
+              <div class="carousel-cell">
+                <img style="height:300px;width:100%" src="https://taybacsensetravel.com/nview/at_diem-danh-nhung-diem-san-anh-dep-tim-lim-mua-lua-chin_db5d8cde5c181c521cffcbcb181b19e1.jpg"/>
+              </div> 
+            {% endfor %}
+        {%endcomment%}
+        </div>
+</div>
+
+    <style>
+        .featured-collection-slider{
+          padding-left: 55px;
+          padding-right: 55px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .featured-collection-slider .carousel-cell{
+          width:25%;
+          padding: 0 15px;
+          display: block;
+        }
+        .flickity-button:disabled{
+          pointer-events: all!important;
+        }
+        @media screen and (max-width: 920px){
+          .featured-collection-slider{
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .featured-collection-slider .carousel-cell{
+            width:50%;
+          }
+        }
+        @media screen and (max-width: 767px){
+          .featured-collection-slider .carousel-cell{
+            width:100%;
+          }
+        }
+        </style>
+{% schema %}
+{
+    "name":"Carousel",
+    "tag":"section",
+    "settings":[
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Featured Collection"
+        },
+         {
+            "type": "collection",
+            "id":"feature-collection",
+            "label":"Collection"
+        },
+        {
+            "type": "range",
+            "id": "product_count",
+            "min": 4,
+            "max": 12,
+            "label": "Number of products to display",
+            "default": 4
+          }
+    ],
+    "presets": [
+    {
+        "name":"Carousel"
+    }
+   ]
+}
+{% endschema %}

@@ -11,6 +11,10 @@
 .custon-slider-container {
     background: var(--color-pink-bg);
 }
+.custon-slider-container .slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .uppercase{
     text-transform: uppercase !important;
 }

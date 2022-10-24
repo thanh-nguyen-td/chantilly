@@ -1,13 +1,29 @@
 <div class="custon-slider-container">
-    kaka
+    {% assign items = section.settings.collection %}
     <div>
-        {% for collection in section.settings.collection %}
-            <div >{{section.settings.collection.title}}</div>
-        {% endfor %}
-        <div >{{section.settings.collection.title}}</div>
+        <div >{{items.title}}</div>
+        <div class="slider" id="slider">
+        {%- for item in items.products -%}
+            <div class="item">
+                <div style="width:100%; ">{{ forloop.index}}{{item.title}}</div>
+                <img style="width: 100%;" src="{{item.images[0].src | img_url: 'large'}}"/>
+            </div>
+        {%- endfor -%}
+        <div>
+            <button id="prev">prev</button>
+            <button id="next">next</button>
+        </div>
     </div>
-    kiki
+    </div>
 </div>
+<script>
+    document.getElementById('next').onclick = () => {
+        console.log("thanhkaka")
+        var list =  document.querySelectorAll('.item')
+        console.log('list',list)
+        document.getElementById('slider').appendChild(list[0])
+    }
+</script>
 {% schema %}
 {
     "name":"Slider product",
