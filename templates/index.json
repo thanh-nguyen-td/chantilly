@@ -245,19 +245,12 @@
           "settings": {
             "collection": "frontpage"
           }
-        },
-        "fbc8ad58-0154-4156-85c6-7ce49c9c897a": {
-          "type": "collection_list",
-          "settings": {
-            "collection": "frontpage"
-          }
         }
       },
       "block_order": [
         "7bfabec0-32e7-4875-8ace-fa2cac51a74a",
         "9dfad7de-96e3-4a12-8364-f18451df8312",
-        "d655caf7-bcf1-46c4-bf38-2c633b797f5f",
-        "fbc8ad58-0154-4156-85c6-7ce49c9c897a"
+        "d655caf7-bcf1-46c4-bf38-2c633b797f5f"
       ],
       "settings": {
         "title": "Future Designer Collabs",
