@@ -1,8 +1,8 @@
-<div style="text-align: center;">
-    <h2 style="font-family: 'ITC Galliard';">{{section.settings.title}}</h2>
-    <div style="display:flex; align-items:center; justify-content:center" class="page-width">
+<div class="custom-collection-container">
+    <h2>{{section.settings.title}}</h2>
+    <div class="page-width content">
         {%- for items in section.blocks -%}
-            <a href="{{items.settings.collection.url}}" style="text-align: center;margin:25px" class="text_link">
+            <a href="{{items.settings.collection.url}}" class="text_link">
                 <div class="image">
                     {% if items.settings.collection.image.src != blank %}
                         <img src="{{items.settings.collection.image.src  | img_url: 'large'}}}" loading="lazy"/>
@@ -15,6 +15,41 @@
         {%- endfor -%}
     </div>
 </div>
+
+{% style %}
+    .custom-collection-container{
+        text-align: center;
+    }
+    .custom-collection-container h2 {
+        font-family: 'ITC Galliard';
+    }
+    .custom-collection-container .content {
+        display:flex; 
+        align-items:center;
+        justify-content:center
+    }
+    .custom-collection-container .content a{
+        text-align: center;
+        margin:25px
+    }
+    .custom-collection-container .content .image{
+    height: 190px;
+    width: 190px;
+    border-radius: 95px;
+    overflow: hidden;
+    border: 2px solid #E3D0D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .custom-collection-container .content .image img{
+    height: 170px;
+    width: 170px;
+    border-radius: 85px;
+   
+}
+{% endstyle %}
+
 {% schema %}
 {
     "name":"Custom collection",

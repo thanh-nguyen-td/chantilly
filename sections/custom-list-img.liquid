@@ -1,4 +1,47 @@
-<div style="background: red;">List img</div>
+<div class="list-image-container">
+    {%- for items in section.blocks -%}
+        {% if items.settings.link_url != blank %}
+            <a href="{{items.settings.link_url}}" class="text_link image">
+                {% if items.settings.image != blank %}
+                    <img src="{{items.settings.image | img_url: 'large'}}}" loading="lazy"/>
+                {% else %}
+                    {{ 'image' | placeholder_svg_tag }}  
+                {% endif %}
+        </a>
+        {% else %}
+        <div class="image">
+            {% if items.settings.image != blank %}
+                <img src="{{items.settings.image | img_url: 'large'}}}" loading="lazy"/>
+            {% else %}
+                {{ 'image' | placeholder_svg_tag }}  
+            {% endif %}
+        </div>
+        {% endif %}
+       
+    {%- endfor -%}
+</div>
+
+{% style %}
+    .list-image-container{
+    height:300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:0px;
+    overflow: hidden;
+}
+.list-image-container .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.list-image-container img{
+    height:100%;
+    width: 100%;
+}
+{% endstyle %}
+
 {% schema %}
 {
     "name":"Image list",
