@@ -1,7 +1,7 @@
 <div>
     {% case section.settings.slect_type %}
         {% when 'circle' %}
-            <div class="custom-collection-container">
+            <div class="custom-collection-circle-container">
                 <h2>{{section.settings.title}}</h2>
                 <div class="page-width content">
                     {%- for items in section.blocks -%}
@@ -19,29 +19,46 @@
                 </div>
             </div>
         {% when 'rectangle_lying' %}
-            <div>hinh chu nhat nam ngang</div>
+            <div class="custom-collection-rectangle-container">hinh chu nhat nam ngang 111
+                <div class="page-width content">
+                {%- for items in section.blocks -%}
+                        <a href="{{items.settings.collection.url}}" class="text_link">
+                            <div class="wrap-image">
+                                {% if items.settings.collection.image.src != blank %}
+                                    <img class="custom-image" src="{{items.settings.collection.image.src  | img_url: 'large'}}}" loading="lazy"/>
+                                {% else %}
+                                    {{ 'image' | placeholder_svg_tag:"custom-image" }}  
+                                {% endif %}
+                            </div>
+                            <p style="color: #c16452;font-family:futura;" >{{items.settings.collection.title}}</p>
+                        </a>
+                    {%- endfor -%}
+                    </div>
+                </div>
+               
+          
         {% else %}
         <div>hinh chu nhat nam doc</div>
     {% endcase %}
 </div>
 
 {% style %}
-    .custom-collection-container{
+    .custom-collection-circle-container{
         text-align: center;
     }
-    .custom-collection-container h2 {
+    .custom-collection-circle-container h2 {
         font-family: 'ITC Galliard';
     }
-    .custom-collection-container .content {
+    .custom-collection-circle-container .content {
         display:flex; 
         align-items:center;
         justify-content:center
     }
-    .custom-collection-container .content a{
+    .custom-collection-circle-container .content a{
         text-align: center;
         margin:25px
     }
-    .custom-collection-container .content .image{
+    .custom-collection-circle-container .content .image{
     height: 190px;
     width: 190px;
     border-radius: 95px;
@@ -51,12 +68,34 @@
     justify-content: center;
     align-items: center;
 }
-    .custom-collection-container .content .image img{
+    .custom-collection-circle-container .content .image img{
     height: 170px;
     width: 170px;
     border-radius: 85px;
    
 }
+
+.custom-collection-rectangle-container .content {
+    display:flex; 
+    align-items:center;
+    justify-content:center
+    }
+
+.custom-collection-rectangle-container .content .image{
+    height: 190px;
+    width: 190px;
+    border-radius: 95px;
+    overflow: hidden;
+    border: 2px solid #E3D0D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-collection-rectangle-container  .custom-image{
+    height: 190px;
+    width: 190px;
+}
+
 {% endstyle %}
 
 {% schema %}
