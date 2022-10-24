@@ -8,7 +8,9 @@
 .text_white{
     color:#fff;
 }
-
+.custon-slider-container {
+    background: var(--color-pink-bg);
+}
 .uppercase{
     text-transform: uppercase !important;
 }
