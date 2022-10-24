@@ -1,19 +1,28 @@
-<div class="custom-collection-container">
-    <h2>{{section.settings.title}}</h2>
-    <div class="page-width content">
-        {%- for items in section.blocks -%}
-            <a href="{{items.settings.collection.url}}" class="text_link">
-                <div class="image">
-                    {% if items.settings.collection.image.src != blank %}
-                        <img src="{{items.settings.collection.image.src  | img_url: 'large'}}}" loading="lazy"/>
-                    {% else %}
-                        {{ 'image' | placeholder_svg_tag }}  
-                    {% endif %}
+<div>
+    {% case section.settings.slect_type %}
+        {% when 'circle' %}
+            <div class="custom-collection-container">
+                <h2>{{section.settings.title}}</h2>
+                <div class="page-width content">
+                    {%- for items in section.blocks -%}
+                        <a href="{{items.settings.collection.url}}" class="text_link">
+                            <div class="image">
+                                {% if items.settings.collection.image.src != blank %}
+                                    <img src="{{items.settings.collection.image.src  | img_url: 'large'}}}" loading="lazy"/>
+                                {% else %}
+                                    {{ 'image' | placeholder_svg_tag }}  
+                                {% endif %}
+                            </div>
+                            <p style="color: #c16452;font-family:futura;" >{{items.settings.collection.title}}</p>
+                        </a>
+                    {%- endfor -%}
                 </div>
-                <p style="color: #c16452;font-family:futura;" >{{items.settings.collection.title}}</p>
-            </a>
-        {%- endfor -%}
-    </div>
+            </div>
+        {% when 'rectangle_lying' %}
+            <div>hinh chu nhat nam ngang</div>
+        {% else %}
+        <div>hinh chu nhat nam doc</div>
+    {% endcase %}
 </div>
 
 {% style %}
@@ -60,6 +69,26 @@
             "id": "title",
             "label": "Title",
             "default": "Future Designer Collabs"
+        },
+        {
+            "type": "select",
+            "id": "slect_type",
+            "options": [
+                {
+                "value": "circle",
+                "label": "Circle"
+                },
+                {
+                "value": "rectangle_lying",
+                "label": "Rectangle lying"
+                },
+                {
+                "value": "vertical_rectangle",
+                "label": "Vertical rectangle"
+                }
+            ],
+            "default": "vertical_rectangle",
+            "label": "Select type"
         }
     ],
     "blocks":[
