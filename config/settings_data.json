@@ -181,12 +181,22 @@
               "heading": "Shop",
               "menu": "footer"
             }
+          },
+          "561495fd-022d-43f9-96e9-c0b74c10e51c": {
+            "type": "email",
+            "settings": {
+              "heading": "Newsletter",
+              "content": "Subscribe to be the first to hear about our exclusive offers and latest arrivals.",
+              "is_input_email": true,
+              "button": "SIGN UP"
+            }
           }
         },
         "block_order": [
           "2cf70ee6-1afc-43da-9c4c-65afdd2e706a",
           "footer-0",
-          "30ab90fd-fa08-4a65-96a2-c115db810827"
+          "30ab90fd-fa08-4a65-96a2-c115db810827",
+          "561495fd-022d-43f9-96e9-c0b74c10e51c"
         ],
         "settings": {
           "color_scheme": "background-1",
