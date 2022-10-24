@@ -165,20 +165,20 @@
             "type": "text",
             "settings": {
               "heading": "",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>Best Swimwear is a bikini boutique, in sunny Hermosa Beach, California.<\/p><p>They designed the store with the female in mind. A warm environment where instead of feeling self-conscious she feels secure in her own body, not limited by age, size or shape, wearing swimwear that fits and feels good.<\/p>"
             }
           },
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "About",
               "menu": "footer"
             }
           },
           "30ab90fd-fa08-4a65-96a2-c115db810827": {
             "type": "link_list",
             "settings": {
-              "heading": "",
+              "heading": "Shop",
               "menu": "footer"
             }
           }
