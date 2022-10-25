@@ -44,47 +44,6 @@
         "show_text_below": true
       }
     },
-    "74fbf732-55ea-490c-8cbc-063a8da6e983": {
-      "type": "cross-page-promos",
-      "blocks": {
-        "0ec58066-f091-4c55-b47a-ff0add29ee37": {
-          "type": "list_img",
-          "settings": {
-            "link_url": "",
-            "text_title": "Free shipping"
-          }
-        },
-        "4f4952b4-6f67-4d52-bbd3-fa79deab0158": {
-          "type": "list_img",
-          "settings": {
-            "link_url": "",
-            "text_title": "New styles"
-          }
-        },
-        "b4ab6f66-71ca-4974-9c46-bffcaa1ac9cc": {
-          "type": "list_img",
-          "settings": {
-            "link_url": "",
-            "text_title": "Girt cards"
-          }
-        },
-        "7d157d34-5966-47d0-b92d-b1156782d9ca": {
-          "type": "list_img",
-          "settings": {
-            "link_url": "",
-            "text_title": "5.0 Trustpilot rating"
-          }
-        }
-      },
-      "block_order": [
-        "0ec58066-f091-4c55-b47a-ff0add29ee37",
-        "4f4952b4-6f67-4d52-bbd3-fa79deab0158",
-        "b4ab6f66-71ca-4974-9c46-bffcaa1ac9cc",
-        "7d157d34-5966-47d0-b92d-b1156782d9ca"
-      ],
-      "settings": {
-      }
-    },
     "513411c5-d48f-4e4b-8e7e-8e693eccc7cf": {
       "type": "collapsible-content",
       "blocks": {
@@ -186,13 +145,54 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "74fbf732-55ea-490c-8cbc-063a8da6e983": {
+      "type": "cross-page-promos",
+      "blocks": {
+        "0ec58066-f091-4c55-b47a-ff0add29ee37": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Free shipping"
+          }
+        },
+        "4f4952b4-6f67-4d52-bbd3-fa79deab0158": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "New styles"
+          }
+        },
+        "b4ab6f66-71ca-4974-9c46-bffcaa1ac9cc": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Girt cards"
+          }
+        },
+        "7d157d34-5966-47d0-b92d-b1156782d9ca": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "5.0 Trustpilot rating"
+          }
+        }
+      },
+      "block_order": [
+        "0ec58066-f091-4c55-b47a-ff0add29ee37",
+        "4f4952b4-6f67-4d52-bbd3-fa79deab0158",
+        "b4ab6f66-71ca-4974-9c46-bffcaa1ac9cc",
+        "7d157d34-5966-47d0-b92d-b1156782d9ca"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "dbb50d77-52f4-4fc0-aab4-d878331736b7",
-    "74fbf732-55ea-490c-8cbc-063a8da6e983",
     "513411c5-d48f-4e4b-8e7e-8e693eccc7cf",
-    "ea00cfe1-6ee8-4c9f-b63e-07d4736df4df"
+    "ea00cfe1-6ee8-4c9f-b63e-07d4736df4df",
+    "74fbf732-55ea-490c-8cbc-063a8da6e983"
   ]
 }
