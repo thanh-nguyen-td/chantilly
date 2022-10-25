@@ -135,12 +135,64 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "ea00cfe1-6ee8-4c9f-b63e-07d4736df4df": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do you choose what materials to use?",
+            "icon": "none",
+            "row_content": "<p>Each piece we create is the product of years of designing, sourcing, and producing with the highest-quality materials and with like-minded production partners. We thoroughly research and vet our raw materials to make sure they meet our standards, are good for you and better for the environment. In addition to thinking about the impact on people and the environment, we consider factors like availability, preferred fiber content, water and energy input, and GHG emissions.<\/p><p>Act natural. We also use mostly natural materials, which break down better and are less of a pollutant than the synthetic fibers that are being found in oceans and water supplies. <\/p>",
+            "page": ""
+          }
+        },
+        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where are your products made?",
+            "icon": "none",
+            "row_content": "<p>We like our fabric quality like we like our sleep quality: premium. We source and manufacture our apparel all over the world depending on where we can find the highest quality fabrics and excellent factories that can produce garments to the standards our customers expect. <\/p><p>We partner with world-class manufacturers that are committed to fair and equitable practices. The more we grow, and as our manufacturing quantities increase, this will continue to be a priority for us. When developing a product, we choose countries that are best-in-class at the desired raw material fiber and quality, over less expensive labor. <\/p>",
+            "page": ""
+          }
+        },
+        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are you doing to be more sustainable?",
+            "icon": "check_mark",
+            "row_content": "<p>Trust us when we say our sustainability goals are as ambitious as waking up before the alarm. These goals are designed to innovate and better how we design and manufacture, which means that we: thoughtfully consider and care about the materials we source, the production methods we use, how we distribute and our practices at our headquarters and Bedroom locations.<\/p><p>In addition to our fabric selection and how we manufacture, we are also doing what we can by minimizing production quantities with demand-oriented ordering to minimize unnecessary waste and unnecessary production. <\/p><p>We are on a journey of progress and as we continue to grow and evolve as a business, we are committed to sharing with you, the actions being taken towards positive change to care for the planet and its people.<\/p><p>To us, being sustainable is about responsible and ethical choices and doing our best to do what’s right for our employees, workers, our customers, and the world around us. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-0",
+        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-1",
+        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Sustainability",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "dbb50d77-52f4-4fc0-aab4-d878331736b7",
     "74fbf732-55ea-490c-8cbc-063a8da6e983",
-    "513411c5-d48f-4e4b-8e7e-8e693eccc7cf"
+    "513411c5-d48f-4e4b-8e7e-8e693eccc7cf",
+    "ea00cfe1-6ee8-4c9f-b63e-07d4736df4df"
   ]
 }
