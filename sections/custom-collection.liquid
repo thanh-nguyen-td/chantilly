@@ -44,10 +44,34 @@
                     {%- endfor -%}
                     </div>
                 </div>
-               
-          
         {% else %}
-        <div>hinh chu nhat nam doc</div>
+        <div class="custom-collection-rectangle">
+            <div class="page-width content" >
+                {%- for items in section.blocks -%}
+                    {% assign image = items.settings.collection.image.src %}
+                        <a href="{{items.settings.collection.url}}" class="text_link" style="width:100%">
+                            <div class="wrap-image">
+                               
+                                {% if image != blank %}
+                                    <img class="custom-image" src="{{items.settings.collection.image.src  | img_url: 'large'}}}" loading="lazy"/>
+                                {% else %}
+                                    {{ 'image' | placeholder_svg_tag:"custom-image" }}  
+                                {% endif %}
+                            </div>
+                           <div class="custom-text">
+                            {% if items.settings.collection.title != blank%}
+                                <p {% unless image != blank %}
+                                    style="color:#000"
+                                {% endunless %} >{{items.settings.collection.title}}</p>
+                                {% else %}
+                                <p style="opacity: 0;" >t</p>  
+                            {% endif %}
+                           </div>
+                           
+                        </a>
+                    {%- endfor -%}
+            </div>
+        </div>
     {% endcase %}
 </div>
 
@@ -77,12 +101,13 @@
     justify-content: center;
     align-items: center;
 }
-    .custom-collection-circle-container .content .image img{
+.custom-collection-circle-container .content .image img{
     height: 170px;
     width: 170px;
     border-radius: 85px;
    
 }
+
 .custom-collection-rectangle-container .content {
     display:flex; 
     align-items:center;
@@ -90,13 +115,11 @@
     position:relative;
    
     }
-
 .custom-collection-rectangle-container .custom-image{
     height: 190px;
     width: 96%;
     border:1px solid #999;
     margin:2%
-  
 }
 .custom-collection-rectangle-container p {
     position:relative; 
@@ -106,6 +129,33 @@
     font-family:var( --font-family-itc);
 }
 
+.custom-collection-rectangle .content {
+    display:flex; 
+    align-items:center;
+    justify-content:center;
+    position:relative;
+   
+    }
+.custom-collection-rectangle .custom-image{
+    height: 400px;
+    width: 96%;
+    margin:2%
+}
+.custom-collection-rectangle .custom-text {
+    position:relative; 
+    display:flex;
+    justify-content:center;
+    bottom:250px;
+    color: var(--color-white-text);
+    font-family:var( --font-family-itc);
+
+}
+.custom-collection-rectangle .custom-text p{
+    padding:10px 20px;
+    background:#fff;
+    border-radius:5px;
+    color:#000
+}
 {% endstyle %}
 
 {% schema %}
