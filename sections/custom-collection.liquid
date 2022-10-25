@@ -5,8 +5,8 @@
                 <h2>{{section.settings.title}}</h2>
                 <div class="page-width content">
                     {%- for items in section.blocks -%}
-                        <a href="{{items.settings.collection.url}}" class="text_link">
-                            <div class="image">
+                        <a href="{{items.settings.collection.url}}" class="text_link" >
+                            <div class="image" >
                                 {% if items.settings.collection.image.src != blank %}
                                     <img src="{{items.settings.collection.image.src  | img_url: 'large'}}}" loading="lazy"/>
                                 {% else %}
@@ -19,18 +19,27 @@
                 </div>
             </div>
         {% when 'rectangle_lying' %}
-            <div class="custom-collection-rectangle-container">hinh chu nhat nam ngang 111
-                <div class="page-width content">
+            <div class="custom-collection-rectangle-container">
+                <div class="page-width content" >
                 {%- for items in section.blocks -%}
-                        <a href="{{items.settings.collection.url}}" class="text_link">
+                    {% assign image = items.settings.collection.image.src %}
+                        <a href="{{items.settings.collection.url}}" class="text_link" style="width:100%">
                             <div class="wrap-image">
-                                {% if items.settings.collection.image.src != blank %}
+                               
+                                {% if image != blank %}
                                     <img class="custom-image" src="{{items.settings.collection.image.src  | img_url: 'large'}}}" loading="lazy"/>
                                 {% else %}
                                     {{ 'image' | placeholder_svg_tag:"custom-image" }}  
                                 {% endif %}
                             </div>
-                            <p style="color: #c16452;font-family:futura;" >{{items.settings.collection.title}}</p>
+                            {% if items.settings.collection.title != blank%}
+                                <p {% unless image != blank %}
+                                    style="color:#000"
+                                {% endunless %} >{{items.settings.collection.title}}</p>
+                                {% else %}
+                                <p style="opacity: 0;" >t</p>  
+                            {% endif %}
+                           
                         </a>
                     {%- endfor -%}
                     </div>
@@ -74,26 +83,27 @@
     border-radius: 85px;
    
 }
-
 .custom-collection-rectangle-container .content {
     display:flex; 
     align-items:center;
-    justify-content:center
+    justify-content:center;
+    position:relative;
+   
     }
 
-.custom-collection-rectangle-container .content .image{
+.custom-collection-rectangle-container .custom-image{
     height: 190px;
-    width: 190px;
-    border-radius: 95px;
-    overflow: hidden;
-    border: 2px solid #E3D0D1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 96%;
+    border:1px solid #999;
+    margin:2%
+  
 }
-.custom-collection-rectangle-container  .custom-image{
-    height: 190px;
-    width: 190px;
+.custom-collection-rectangle-container p {
+    position:relative; 
+    bottom:80px;
+    left:30px;
+    color: var(--color-white-text);
+    font-family:var( --font-family-itc);
 }
 
 {% endstyle %}
