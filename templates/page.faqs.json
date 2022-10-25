@@ -189,10 +189,16 @@
     "afc51c97-b35c-41b2-bded-fa47602bc3ea": {
       "type": "custom-content-faqs",
       "blocks": {
+        "a38e4846-fe00-48d0-a699-19cd8323532a": {
+          "type": "text_title",
+          "settings": {
+            "title": "Ordering"
+          }
+        },
         "template--16728205295929__afc51c97-b35c-41b2-bded-fa47602bc3ea-16666821563916eb8d-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "What size should I buy?",
             "row_content": "<p>Best Swimwear is a bikini boutique, in sunny Hermosa Beach, California.<\/p><p>They designed the store with the female in mind. A warm environment where instead of feeling self-conscious she feels secure in her own body, not limited by age, size or shape, wearing swimwear that fits and feels good.<\/p>",
             "page": ""
           }
@@ -200,7 +206,7 @@
         "template--16728205295929__afc51c97-b35c-41b2-bded-fa47602bc3ea-16666821563916eb8d-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Can I cancel my order?",
             "row_content": "<p>Best Swimwear is a bikini boutique, in sunny Hermosa Beach, California.<\/p><p>They designed the store with the female in mind. A warm environment where instead of feeling self-conscious she feels secure in her own body, not limited by age, size or shape, wearing swimwear that fits and feels good.<\/p>",
             "page": ""
           }
@@ -208,9 +214,15 @@
         "template--16728205295929__afc51c97-b35c-41b2-bded-fa47602bc3ea-16666821563916eb8d-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "What if I want to speak to someone?",
             "row_content": "<p>We like our fabric quality like we like our sleep quality: premium. We source and manufacture our apparel all over the world depending on where we can find the highest quality fabrics and excellent factories that can produce garments to the standards our customers expect. <\/p><p>We partner with world-class manufacturers that are committed to fair and equitable practices. The more we grow, and as our manufacturing quantities increase, this will continue to be a priority for us. When developing a product, we choose countries that are best-in-class at the desired raw material fiber and quality, over less expensive labor. <\/p>",
             "page": ""
+          }
+        },
+        "932f1c29-e110-4a2e-a364-316827196c2d": {
+          "type": "text_title",
+          "settings": {
+            "title": "Shipping"
           }
         },
         "template--16728205295929__afc51c97-b35c-41b2-bded-fa47602bc3ea-16666821563916eb8d-3": {
@@ -221,22 +233,26 @@
             "page": ""
           }
         },
-        "a38e4846-fe00-48d0-a699-19cd8323532a": {
-          "type": "text_title",
+        "33e3816b-38de-4ad0-8159-0744dc020345": {
+          "type": "collapsible_row",
           "settings": {
-            "title": "Ordering"
+            "heading": "What shipping providers do you use?",
+            "row_content": "<p>Once your order is placed, you will receive a confirmation email letting you know that our fulfillment team has received your order. Once your order is fulfilled, you will receive an email notification with your tracking information. Shipping fees are non-refundable in the case of returns.<br\/><\/p>",
+            "page": ""
           }
         }
       },
       "block_order": [
+        "a38e4846-fe00-48d0-a699-19cd8323532a",
         "template--16728205295929__afc51c97-b35c-41b2-bded-fa47602bc3ea-16666821563916eb8d-0",
         "template--16728205295929__afc51c97-b35c-41b2-bded-fa47602bc3ea-16666821563916eb8d-1",
         "template--16728205295929__afc51c97-b35c-41b2-bded-fa47602bc3ea-16666821563916eb8d-2",
+        "932f1c29-e110-4a2e-a364-316827196c2d",
         "template--16728205295929__afc51c97-b35c-41b2-bded-fa47602bc3ea-16666821563916eb8d-3",
-        "a38e4846-fe00-48d0-a699-19cd8323532a"
+        "33e3816b-38de-4ad0-8159-0744dc020345"
       ],
       "settings": {
-        "caption": ""
+        "caption": "Shipping"
       }
     }
   },
