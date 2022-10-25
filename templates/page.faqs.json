@@ -2,13 +2,51 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "dbb50d77-52f4-4fc0-aab4-d878331736b7": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16728205295929__dbb50d77-52f4-4fc0-aab4-d878331736b7-166666686366594852-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Customer Help",
+            "heading_size": "h0"
+          }
+        },
+        "template--16728205295929__dbb50d77-52f4-4fc0-aab4-d878331736b7-166666686366594852-1": {
+          "type": "text",
+          "settings": {
+            "text": "If talking to a real-life human is more your thing, you can reach our Customer Happiness Team via email (below).",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16728205295929__dbb50d77-52f4-4fc0-aab4-d878331736b7-166666686366594852-0",
+        "template--16728205295929__dbb50d77-52f4-4fc0-aab4-d878331736b7-166666686366594852-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/new-bswim.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "dbb50d77-52f4-4fc0-aab4-d878331736b7"
   ]
 }
