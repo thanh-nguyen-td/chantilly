@@ -68,6 +68,12 @@
 .mg_20{
     margin: 20px;
 }
+.content-faqs-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background:pink ;
+}
 
 /* display center*/
 .custom_center{
