@@ -1,0 +1,176 @@
+{% comment %}
+
+  Renders a Search product
+  Request: null
+  Accepts:
+    - button_icon: "left" or null;
+    - type: "2"
+  Usage:
+  {% render 'search', button_icon: "left", type: "2" %}
+
+{% endcomment %}
+
+{% assign height-input = "30px" %}
+{% style %}
+   .search-product .left-5r{
+        left:4.8rem !important
+    }
+    .search-product .icon-search {
+      margin-top:10px
+    }
+    .search-product-type-2 .search-button{
+        width:{{ height-input }};
+        height:{{ height-input }} ;
+        font-size:13px;
+       
+    }
+    .search-product-type-2 .field__input{
+        height:{{ height-input }}
+    }
+    .search-product-type-2 .field__input::placeholder{
+    opacity:1;
+    font-size:13px;
+    }
+    .search-product-type-2 .field__input:focus{
+    padding: 1.5rem;
+    padding-right: 5rem;
+}
+{% endstyle %}
+{% assign style_input = "padding-left:3rem;padding-right:5px" %}
+
+{% if type == '2' %}
+  <div class="search-product search-product-type-2" style="width: 100%;" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
+    <div class="modal-overlay"></div>
+    <div style="padding: 0;" class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}" tabindex="-1">
+      {%- if settings.predictive_search_enabled -%}
+        <predictive-search style="width:100% ;max-width:none" class="" data-loading-text="{{ 'accessibility.loading' | t }}">
+      {%- endif -%}
+      
+          <div class="field">
+          {% if button_icon == "left" %}
+                <div>
+                    <button  class="search__button field__button search-button" style="z-index: 1;right:auto" aria-label="{{ 'general.search.search' | t }}">
+                        <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                          <use href="#icon-search">
+                        </svg>
+                      </button>
+                </div>
+            {% endif %}
+            <input class="search__input field__input"
+              id="Search-In-Modal"
+              type="search"
+              name="q"
+              value=""
+              style="{% if button_icon == "left"%} {{style_input}} {% endif%}"
+              placeholder="{{ 'general.search.search' | t }}"
+              {%- if settings.predictive_search_enabled -%}
+                role="combobox"
+                aria-expanded="false"
+                aria-owns="predictive-search-results-list"
+                aria-controls="predictive-search-results-list"
+                aria-haspopup="listbox"
+                aria-autocomplete="list"
+                autocorrect="off"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+              {%- endif -%}
+            >
+                {% if type != "2" %}
+                    <label class="field__label {% if button_icon == "left" %} left-5r {% endif %}" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                {% endif %}
+            <input type="hidden" name="options[prefix]" value="last">
+            {%- unless button_icon == "left" -%}
+                <button class="search__button field__button search-button" aria-label="{{ 'general.search.search' | t }}">
+                    <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                      <use href="#icon-search">
+                    </svg>
+                  </button>
+            {%- endunless -%}
+          </div>
+          {%- if settings.predictive_search_enabled -%}
+           <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+              <div class="predictive-search__loading-state">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+              </div>
+            </div>
+            <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+          {%- endif -%}
+      
+      {%- if settings.predictive_search_enabled -%}
+        </predictive-search>
+      {%- endif -%}
+    </div>
+  </div>
+
+{% else %}
+
+  <div class="search-product" style="width: 100%;" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
+    <div class="modal-overlay"></div>
+    <div style="padding: 0;" class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}" tabindex="-1">
+      {%- if settings.predictive_search_enabled -%}
+        <predictive-search style="width:100% ;max-width:none" class="" data-loading-text="{{ 'accessibility.loading' | t }}">
+      {%- endif -%}
+        <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+          <div class="field">
+          {% if button_icon == "left" %}
+                <div>
+                    <button  class="search__button field__button search-button" style="z-index: 1;right:auto" aria-label="{{ 'general.search.search' | t }}">
+                        <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                          <use href="#icon-search">
+                        </svg>
+                      </button>
+                </div>
+            {% endif %}
+           
+            <input class="search__input field__input"
+              id="Search-In-Modal"
+              type="search"
+              name="q"
+              value=""
+              style="{% if button_icon == "left"%} {{style_input}} {% endif%}"
+              placeholder="{{ 'general.search.search' | t }}"
+              {%- if settings.predictive_search_enabled -%}
+                role="combobox"
+                aria-expanded="false"
+                aria-owns="predictive-search-results-list"
+                aria-controls="predictive-search-results-list"
+                aria-haspopup="listbox"
+                aria-autocomplete="list"
+                autocorrect="off"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+              {%- endif -%}
+            >
+                {% if type != "2" %}
+                    <label class="field__label {% if button_icon == "left" %} left-5r {% endif %}" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                {% endif %}
+            <input type="hidden" name="options[prefix]" value="last">
+            {%- unless button_icon == "left" -%}
+                <button class="search__button field__button search-button" aria-label="{{ 'general.search.search' | t }}">
+                    <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                      <use href="#icon-search">
+                    </svg>
+                  </button>
+            {%- endunless -%}
+          </div>
+          {%- if settings.predictive_search_enabled -%}
+           <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+              <div class="predictive-search__loading-state">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+              </div>
+            </div>
+            <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+          {%- endif -%}
+        </form>
+      {%- if settings.predictive_search_enabled -%}
+        </predictive-search>
+      {%- endif -%}
+    </div>
+  </div>
+{% endif %}
