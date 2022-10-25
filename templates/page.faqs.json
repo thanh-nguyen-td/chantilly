@@ -43,149 +43,6 @@
         "show_text_below": true
       }
     },
-    "513411c5-d48f-4e4b-8e7e-8e693eccc7cf": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I return an item?",
-            "icon": "none",
-            "row_content": "<p>We want you to be completely satisfied with your purchase. Not the perfect fit? Just let us know—we’re happy to help! We offer free shipping on all U.S. returns.<\/p>",
-            "page": ""
-          }
-        },
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What's the return policy",
-            "icon": "none",
-            "row_content": "<p>A return must be requested 30 days of the ship date, after which merchandise must be sent back within 15 days. Merchandise must not be worn, washed, dyed, or altered. Merchandise must be returned in its original packaging. Returns must include the packing slip supplied during return process (packing slip will auto-generate along with the return label). Package should only include items listed in that particular return packing slip. Merchandise that appears to be worn and\/or washed and not in its original\/sellable condition may result in a delayed refund\/exchange, or may not qualify for a refund or exchange. In these cases, the item(s) will be returned to you. Certain items are marked as not refundable and are not eligible for returns (ie. gift cards, gifts with purchase). Sets and Kits are not eligible for partial exchange or return.<\/p>",
-            "page": ""
-          }
-        },
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "I am expecting a refund. How long does this take?",
-            "icon": "none",
-            "row_content": "<p>Please allow 6-12 business days for us to receive your order. Heads up—it may take up to 10 business days for us to process your return. Once your items have undergone (and passed!) inspection, we will issue your refund to the original form of payment and will notify you of your refund via email. After your refund has been issued by us, please allow 2 additional business days for those funds to be posted to your account. Please note that your refund may only be credited to your original method of payment.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-0",
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-1",
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-2"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Ordering",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "ea00cfe1-6ee8-4c9f-b63e-07d4736df4df": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do you choose what materials to use?",
-            "icon": "none",
-            "row_content": "<p>Each piece we create is the product of years of designing, sourcing, and producing with the highest-quality materials and with like-minded production partners. We thoroughly research and vet our raw materials to make sure they meet our standards, are good for you and better for the environment. In addition to thinking about the impact on people and the environment, we consider factors like availability, preferred fiber content, water and energy input, and GHG emissions.<\/p><p>Act natural. We also use mostly natural materials, which break down better and are less of a pollutant than the synthetic fibers that are being found in oceans and water supplies. <\/p>",
-            "page": ""
-          }
-        },
-        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Where are your products made?",
-            "icon": "none",
-            "row_content": "<p>We like our fabric quality like we like our sleep quality: premium. We source and manufacture our apparel all over the world depending on where we can find the highest quality fabrics and excellent factories that can produce garments to the standards our customers expect. <\/p><p>We partner with world-class manufacturers that are committed to fair and equitable practices. The more we grow, and as our manufacturing quantities increase, this will continue to be a priority for us. When developing a product, we choose countries that are best-in-class at the desired raw material fiber and quality, over less expensive labor. <\/p>",
-            "page": ""
-          }
-        },
-        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What are you doing to be more sustainable?",
-            "icon": "check_mark",
-            "row_content": "<p>Trust us when we say our sustainability goals are as ambitious as waking up before the alarm. These goals are designed to innovate and better how we design and manufacture, which means that we: thoughtfully consider and care about the materials we source, the production methods we use, how we distribute and our practices at our headquarters and Bedroom locations.<\/p><p>In addition to our fabric selection and how we manufacture, we are also doing what we can by minimizing production quantities with demand-oriented ordering to minimize unnecessary waste and unnecessary production. <\/p><p>We are on a journey of progress and as we continue to grow and evolve as a business, we are committed to sharing with you, the actions being taken towards positive change to care for the planet and its people.<\/p><p>To us, being sustainable is about responsible and ethical choices and doing our best to do what’s right for our employees, workers, our customers, and the world around us. <\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-0",
-        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-1",
-        "template--16728205295929__ea00cfe1-6ee8-4c9f-b63e-07d4736df4df-1666666838700bb410-2"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Sustainability",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "74fbf732-55ea-490c-8cbc-063a8da6e983": {
-      "type": "cross-page-promos",
-      "blocks": {
-        "0ec58066-f091-4c55-b47a-ff0add29ee37": {
-          "type": "list_img",
-          "settings": {
-            "link_url": "",
-            "text_title": "Free shipping"
-          }
-        },
-        "4f4952b4-6f67-4d52-bbd3-fa79deab0158": {
-          "type": "list_img",
-          "settings": {
-            "link_url": "",
-            "text_title": "New styles"
-          }
-        },
-        "b4ab6f66-71ca-4974-9c46-bffcaa1ac9cc": {
-          "type": "list_img",
-          "settings": {
-            "link_url": "",
-            "text_title": "Girt cards"
-          }
-        },
-        "7d157d34-5966-47d0-b92d-b1156782d9ca": {
-          "type": "list_img",
-          "settings": {
-            "link_url": "",
-            "text_title": "5.0 Trustpilot rating"
-          }
-        }
-      },
-      "block_order": [
-        "0ec58066-f091-4c55-b47a-ff0add29ee37",
-        "4f4952b4-6f67-4d52-bbd3-fa79deab0158",
-        "b4ab6f66-71ca-4974-9c46-bffcaa1ac9cc",
-        "7d157d34-5966-47d0-b92d-b1156782d9ca"
-      ],
-      "settings": {
-      }
-    },
     "afc51c97-b35c-41b2-bded-fa47602bc3ea": {
       "type": "custom-content-faqs",
       "blocks": {
@@ -254,14 +111,53 @@
       "settings": {
         "caption": "Shipping"
       }
+    },
+    "74fbf732-55ea-490c-8cbc-063a8da6e983": {
+      "type": "cross-page-promos",
+      "blocks": {
+        "0ec58066-f091-4c55-b47a-ff0add29ee37": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Free shipping"
+          }
+        },
+        "4f4952b4-6f67-4d52-bbd3-fa79deab0158": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "New styles"
+          }
+        },
+        "b4ab6f66-71ca-4974-9c46-bffcaa1ac9cc": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "Girt cards"
+          }
+        },
+        "7d157d34-5966-47d0-b92d-b1156782d9ca": {
+          "type": "list_img",
+          "settings": {
+            "link_url": "",
+            "text_title": "5.0 Trustpilot rating"
+          }
+        }
+      },
+      "block_order": [
+        "0ec58066-f091-4c55-b47a-ff0add29ee37",
+        "4f4952b4-6f67-4d52-bbd3-fa79deab0158",
+        "b4ab6f66-71ca-4974-9c46-bffcaa1ac9cc",
+        "7d157d34-5966-47d0-b92d-b1156782d9ca"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "dbb50d77-52f4-4fc0-aab4-d878331736b7",
-    "513411c5-d48f-4e4b-8e7e-8e693eccc7cf",
-    "ea00cfe1-6ee8-4c9f-b63e-07d4736df4df",
-    "74fbf732-55ea-490c-8cbc-063a8da6e983",
-    "afc51c97-b35c-41b2-bded-fa47602bc3ea"
+    "afc51c97-b35c-41b2-bded-fa47602bc3ea",
+    "74fbf732-55ea-490c-8cbc-063a8da6e983"
   ]
 }
