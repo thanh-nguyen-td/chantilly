@@ -71,8 +71,23 @@
 .content-faqs-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
     background:pink ;
+    
+}
+.content-faqs-container .faqs-left .left-child{
+    position: sticky;
+    top: 70px;
+   
+}
+.content-faqs-container .faqs-left h2,
+.content-faqs-container .faqs-right h3,
+.content-faqs-container .faqs-right .accordion__content  {
+   color: var(--color-gray-text);
+}
+.content-faqs-container .faqs-left a {
+    text-decoration: none;
+    color: var(--color-pink-text)
 }
 
 /* display center*/

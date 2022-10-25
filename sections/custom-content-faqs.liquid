@@ -1,14 +1,19 @@
 
-<div>
-    <div>
-        <h2>How can we help?</h2>
-        <div>hehe</div>
-        <div>hehe</div>
-        <div>hehe</div>
-        <div>hehe</div>
+<div class="content-faqs-container page-width">
+    <div class="faqs-left">
+        <div class="left-child">
+            <h2>How can we help?</h2>
+            {%- for block in section.blocks -%}
+                {% if block.type == "text_title" %}
+                <div>
+                    <a href="#{{forloop.index}}">{{block.settings.title}}</a>
+                </div>
+                {% endif %}
+            
+            {%- endfor -%}
+        </div>
     </div>
-    <div class="">
-        <h1>Demo</h1>
+    <div class="faqs-right">
         <div style="" class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}">
             <div class="grid__item">
               {%- for block in section.blocks -%}
@@ -17,7 +22,7 @@
                         <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
                             <details id="Details-{{ block.id }}-{{ section.id }}"{% if section.settings.open_first_collapsible_row and forloop.first %} open{% endif %}>
                               <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                                <h3 class="accordion__title h2" style="font-weight: 100;">
+                                <h3 class="accordion__title" style="font-weight: 100;font-size:20px">
                                   {{ block.settings.heading | default: block.settings.page.title }}
                                 </h3>
                                 {% render 'icon-caret' %}
@@ -29,7 +34,8 @@
                             </details>
                           </div>
                     {% else %}
-                        <h2>{{block.settings.title}}</h2>
+
+                        <h2 id="{{forloop.index}}" style="font-size: 27px;">{{block.settings.title}}</h2>
                 {% endcase %}
                
               {%- endfor -%}
