@@ -76,6 +76,45 @@
         "padding_bottom": 52
       }
     },
+    "54ecfcdf-136e-4c40-8a9b-a8c42688862c": {
+      "type": "custom-collection",
+      "blocks": {
+        "81c3ed49-550e-4c8b-8714-874b66220d84": {
+          "type": "collection_list",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "d81530c4-673d-4be0-9f58-9d7613b3b08d": {
+          "type": "collection_list",
+          "settings": {
+            "collection": "shoes"
+          }
+        },
+        "0189ffc0-ce91-441f-a6de-a91a6fceefb6": {
+          "type": "collection_list",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "c068be30-4897-4a1d-8d3a-efbb573982d6": {
+          "type": "collection_list",
+          "settings": {
+            "collection": "shoes"
+          }
+        }
+      },
+      "block_order": [
+        "81c3ed49-550e-4c8b-8714-874b66220d84",
+        "d81530c4-673d-4be0-9f58-9d7613b3b08d",
+        "0189ffc0-ce91-441f-a6de-a91a6fceefb6",
+        "c068be30-4897-4a1d-8d3a-efbb573982d6"
+      ],
+      "settings": {
+        "title": "Future Designer Collabs",
+        "slect_type": "vertical_rectangle"
+      }
+    },
     "28eaf566-e922-4a86-84c5-f9022fee0b79": {
       "type": "collection-list",
       "blocks": {
@@ -460,6 +499,7 @@
   "order": [
     "bb35e503-cf3a-4f70-aff6-5a9c4348121f",
     "c4fa142b-0af0-4400-a544-d000b3ec1fa9",
+    "54ecfcdf-136e-4c40-8a9b-a8c42688862c",
     "28eaf566-e922-4a86-84c5-f9022fee0b79",
     "aa0a05e3-4f25-4994-b7f6-50c10b2d787f",
     "6d66e3b4-a460-4ef7-b0a6-fecdde76bef3",
