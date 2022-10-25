@@ -110,17 +110,8 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "I am expecting a refund. How long does this take?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Please allow 6-12 business days for us to receive your order. Heads up—it may take up to 10 business days for us to process your return. Once your items have undergone (and passed!) inspection, we will issue your refund to the original form of payment and will notify you of your refund via email. After your refund has been issued by us, please allow 2 additional business days for those funds to be posted to your account. Please note that your refund may only be credited to your original method of payment.<\/p>",
-            "page": ""
-          }
-        },
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
             "page": ""
           }
         }
@@ -128,18 +119,17 @@
       "block_order": [
         "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-0",
         "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-1",
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-2",
-        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-3"
+        "template--16728205295929__513411c5-d48f-4e4b-8e7e-8e693eccc7cf-1666666838700bb410-2"
       ],
       "settings": {
-        "caption": "d",
-        "heading": "Collapsible content",
+        "caption": "",
+        "heading": "Ordering",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
-        "open_first_collapsible_row": true,
+        "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
