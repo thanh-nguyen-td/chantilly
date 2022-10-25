@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
-      "disabled": true,
+      "type": "main-faqs",
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
