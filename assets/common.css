@@ -72,7 +72,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background:pink ;
     
 }
 .content-faqs-container .faqs-left .left-child{
