@@ -123,138 +123,12 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "aa0a05e3-4f25-4994-b7f6-50c10b2d787f": {
+      "type": "carousel",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "fa0e3ba6-60bc-4fd2-a594-fa018d57218d": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Fit For You",
-            "heading_size": "h1"
-          }
-        },
-        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A day at the pool or lounging by the sea calls for an unexpected and fresh swimsuit update.<\/p><p>When it comes to putting together the perfect beach outfit, our collection of swimwear has you covered. Whether you're looking for a classic one-piece, a dazzling two-piece bikini or a luxe cover-up that will go from the sand to the city, you'll be ready to soak up the sunshine in no time.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP COLLECTION",
-            "button_link": "shopify:\/\/collections"
-          }
-        }
-      },
-      "block_order": [
-        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-0",
-        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-1",
-        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-10-23_at_16.26.48.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "978582cc-2960-4473-a149-6ac8608eb59b": {
-      "type": "custom-video",
-      "blocks": {
-        "9efc3e85-b2d2-4a5b-bdeb-4b34ae67da3e": {
-          "type": "text_list",
-          "settings": {
-            "title": "<h5>CHANTILLY SWIMWEAR<\/h5>"
-          }
-        },
-        "70942d1d-722c-4e69-a491-59879677ea16": {
-          "type": "text_list",
-          "settings": {
-            "title": "<h1 style=\"font-size:56px;margin:0\">Escape the Everyday<\/h1>"
-          }
-        },
-        "515040ac-c0f4-46aa-9d21-c2046c5028a1": {
-          "type": "text_list",
-          "settings": {
-            "title": "<h4>Swimwear that fits. Cute, chic & supportive DD+, bra-sized, longer-length & curve styles <br>\nfor when we can escape to the sun (or the spa).<\/h4>"
-          }
-        }
-      },
-      "block_order": [
-        "9efc3e85-b2d2-4a5b-bdeb-4b34ae67da3e",
-        "70942d1d-722c-4e69-a491-59879677ea16",
-        "515040ac-c0f4-46aa-9d21-c2046c5028a1"
-      ],
-      "settings": {
-        "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0183\/5415\/files\/pexels-taryn-elliott-6051511.mp4?v=1608134933"
-      }
-    },
-    "0c3c257f-9406-4471-baff-ef313f78d466": {
-      "type": "custom-collection",
-      "blocks": {
-        "7bfabec0-32e7-4875-8ace-fa2cac51a74a": {
-          "type": "collection_list",
-          "settings": {
-            "collection": "frontpage"
-          }
-        },
-        "9dfad7de-96e3-4a12-8364-f18451df8312": {
-          "type": "collection_list",
-          "settings": {
-            "collection": "shoes"
-          }
-        },
-        "d655caf7-bcf1-46c4-bf38-2c633b797f5f": {
-          "type": "collection_list",
-          "settings": {
-            "collection": "frontpage"
-          }
-        }
-      },
-      "block_order": [
-        "7bfabec0-32e7-4875-8ace-fa2cac51a74a",
-        "9dfad7de-96e3-4a12-8364-f18451df8312",
-        "d655caf7-bcf1-46c4-bf38-2c633b797f5f"
-      ],
-      "settings": {
-        "title": "Future Designer Collabs",
-        "slect_type": "circle"
+        "title": "Featured Collection",
+        "feature-collection": "frontpage",
+        "product_count": 4
       }
     },
     "6d66e3b4-a460-4ef7-b0a6-fecdde76bef3": {
@@ -301,11 +175,194 @@
         "padding_bottom": 36
       }
     },
+    "0b1cfce1-c79e-481e-a80f-e987c03fd9a5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16683678302521__0b1cfce1-c79e-481e-a80f-e987c03fd9a5-1666662877677e8b15-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>customer review<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "template--16683678302521__0b1cfce1-c79e-481e-a80f-e987c03fd9a5-1666662877677e8b15-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "i have order from Chantilly Swimwear",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--16683678302521__0b1cfce1-c79e-481e-a80f-e987c03fd9a5-1666662877677e8b15-1",
+        "template--16683678302521__0b1cfce1-c79e-481e-a80f-e987c03fd9a5-1666662877677e8b15-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/chantilly-slide-2_1296x_42795034-1a9d-4595-bff1-5a27c2886099.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1fb94509-a678-4dfc-9c39-5eeb9e70f470": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16683678302521__1fb94509-a678-4dfc-9c39-5eeb9e70f470-1666662486d4218b64-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--16683678302521__1fb94509-a678-4dfc-9c39-5eeb9e70f470-1666662486d4218b64-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--16683678302521__1fb94509-a678-4dfc-9c39-5eeb9e70f470-1666662486d4218b64-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16683678302521__1fb94509-a678-4dfc-9c39-5eeb9e70f470-1666662486d4218b64-0",
+        "template--16683678302521__1fb94509-a678-4dfc-9c39-5eeb9e70f470-1666662486d4218b64-1",
+        "template--16683678302521__1fb94509-a678-4dfc-9c39-5eeb9e70f470-1666662486d4218b64-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "978582cc-2960-4473-a149-6ac8608eb59b": {
+      "type": "custom-video",
+      "blocks": {
+        "9efc3e85-b2d2-4a5b-bdeb-4b34ae67da3e": {
+          "type": "text_list",
+          "settings": {
+            "title": "<h5>CHANTILLY SWIMWEAR<\/h5>"
+          }
+        },
+        "70942d1d-722c-4e69-a491-59879677ea16": {
+          "type": "text_list",
+          "settings": {
+            "title": "<h1 style=\"font-size:56px;margin:0\">Escape the Everyday<\/h1>"
+          }
+        },
+        "515040ac-c0f4-46aa-9d21-c2046c5028a1": {
+          "type": "text_list",
+          "settings": {
+            "title": "<h4>Swimwear that fits. Cute, chic & supportive DD+, bra-sized, longer-length & curve styles <br>\nfor when we can escape to the sun (or the spa).<\/h4>"
+          }
+        }
+      },
+      "block_order": [
+        "9efc3e85-b2d2-4a5b-bdeb-4b34ae67da3e",
+        "70942d1d-722c-4e69-a491-59879677ea16",
+        "515040ac-c0f4-46aa-9d21-c2046c5028a1"
+      ],
+      "settings": {
+        "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0183\/5415\/files\/pexels-taryn-elliott-6051511.mp4?v=1608134933"
+      }
+    },
+    "fa0e3ba6-60bc-4fd2-a594-fa018d57218d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fit For You",
+            "heading_size": "h1"
+          }
+        },
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A day at the pool or lounging by the sea calls for an unexpected and fresh swimsuit update.<\/p><p>When it comes to putting together the perfect beach outfit, our collection of swimwear has you covered. Whether you're looking for a classic one-piece, a dazzling two-piece bikini or a luxe cover-up that will go from the sand to the city, you'll be ready to soak up the sunshine in no time.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP COLLECTION",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-0",
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-1",
+        "template--16683678302521__fa0e3ba6-60bc-4fd2-a594-fa018d57218d-16665168238ff8492b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-10-23_at_16.26.48.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "7160b95b-4550-4e45-ab83-26f4054a3290": {
       "type": "text-list",
       "settings": {
         "text_head": "CHANTILLY SWIMWEAR",
         "text_content": "“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”"
+      }
+    },
+    "0c3c257f-9406-4471-baff-ef313f78d466": {
+      "type": "custom-collection",
+      "blocks": {
+        "7bfabec0-32e7-4875-8ace-fa2cac51a74a": {
+          "type": "collection_list",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "9dfad7de-96e3-4a12-8364-f18451df8312": {
+          "type": "collection_list",
+          "settings": {
+            "collection": "shoes"
+          }
+        },
+        "d655caf7-bcf1-46c4-bf38-2c633b797f5f": {
+          "type": "collection_list",
+          "settings": {
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "7bfabec0-32e7-4875-8ace-fa2cac51a74a",
+        "9dfad7de-96e3-4a12-8364-f18451df8312",
+        "d655caf7-bcf1-46c4-bf38-2c633b797f5f"
+      ],
+      "settings": {
+        "title": "Future Designer Collabs",
+        "slect_type": "circle"
       }
     },
     "267a99cd-6a41-44d1-b05d-09ed7f3feafa": {
@@ -398,37 +455,21 @@
       ],
       "settings": {
       }
-    },
-    "8cf6907a-5722-4a3a-990b-ba0eb046e1ad": {
-      "type": "custom-slider",
-      "settings": {
-        "collection": "frontpage",
-        "text_title": "New Arrival",
-        "show_button_view_all": true
-      }
-    },
-    "aa0a05e3-4f25-4994-b7f6-50c10b2d787f": {
-      "type": "carousel",
-      "settings": {
-        "title": "Featured Collection",
-        "feature-collection": "frontpage",
-        "product_count": 4
-      }
     }
   },
   "order": [
     "bb35e503-cf3a-4f70-aff6-5a9c4348121f",
     "c4fa142b-0af0-4400-a544-d000b3ec1fa9",
     "28eaf566-e922-4a86-84c5-f9022fee0b79",
-    "featured_collection",
-    "fa0e3ba6-60bc-4fd2-a594-fa018d57218d",
-    "978582cc-2960-4473-a149-6ac8608eb59b",
-    "0c3c257f-9406-4471-baff-ef313f78d466",
+    "aa0a05e3-4f25-4994-b7f6-50c10b2d787f",
     "6d66e3b4-a460-4ef7-b0a6-fecdde76bef3",
+    "0b1cfce1-c79e-481e-a80f-e987c03fd9a5",
+    "1fb94509-a678-4dfc-9c39-5eeb9e70f470",
+    "978582cc-2960-4473-a149-6ac8608eb59b",
+    "fa0e3ba6-60bc-4fd2-a594-fa018d57218d",
     "7160b95b-4550-4e45-ab83-26f4054a3290",
+    "0c3c257f-9406-4471-baff-ef313f78d466",
     "267a99cd-6a41-44d1-b05d-09ed7f3feafa",
-    "1d43637a-c9e7-4540-b008-11542f9d2f40",
-    "8cf6907a-5722-4a3a-990b-ba0eb046e1ad",
-    "aa0a05e3-4f25-4994-b7f6-50c10b2d787f"
+    "1d43637a-c9e7-4540-b008-11542f9d2f40"
   ]
 }
